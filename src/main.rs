@@ -6,5 +6,6 @@ fn main() {
     println!("Content-Type: text/plain\r\n");
     println!("Hello world!");
     let args: Vec<String> = env::args().collect();
-    println!("{:?}", args);
+    let query_string = args.get(1).unwrap_or(&String::new());
+    println!("{:?}", query_string);
 }
