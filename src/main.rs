@@ -4,7 +4,6 @@ fn main() {
 
     println!("HTTP/1.1 200 OK\r");
     println!("Content-Type: text/plain\r\n");
-    println!("Hello world!");
 
     let result = Command::new("curl")
         .arg("https://jsonplaceholder.typicode.com/posts/2")
